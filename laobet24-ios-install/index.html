@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Laobet24 — ติดตั้งแอป iOS</title>
+  <link rel="apple-touch-icon" href="./icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="theme-color" content="#000000">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html, body { background: #000; color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif; }
+    .squircle { border-radius: 28px; }
+    .card-bg { background-size: cover; background-position: center; }
+    body { -webkit-tap-highlight-color: transparent; }
+    .pill-blue { background: #0A84FF; }
+    .scroll-snap { scroll-snap-type: x mandatory; }
+    .scroll-snap > * { scroll-snap-align: start; }
+    /* Hide horizontal scrollbar on screenshots row */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="min-h-screen px-4 pt-6 pb-24">
+  <!-- Header card -->
+  <div class="flex items-start gap-4 mb-4">
+    <div class="shrink-0 w-[120px] h-[120px] squircle overflow-hidden bg-black shadow-lg flex items-center justify-center">
+      <img src="./icon.png" alt="Laobet24" class="w-full h-full object-cover">
+    </div>
+    <div class="flex-1 min-w-0 pt-1">
+      <h1 class="text-[28px] leading-tight font-bold truncate">Laobet24</h1>
+      <p class="text-[15px] text-neutral-400 mt-0.5">เกมส์ออนไลน์ · เดิมพันกีฬา · ดูบอลสด</p>
+      <div class="flex items-center gap-2 mt-3">
+        <a href="./laobet24.mobileconfig" id="installBtn"
+           class="px-5 py-1.5 rounded-full pill-blue text-white text-[15px] font-semibold active:opacity-70">
+          ติดตั้งฟรี
+        </a>
+        <button aria-label="help" onclick="alert('ติดต่อทีมงานหากติดตั้งไม่สำเร็จ')"
+                class="w-8 h-8 rounded-full bg-neutral-800 text-neutral-400 flex items-center justify-center text-[15px]">
+          ?
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="statusHint" class="hidden mb-4 p-3 rounded-xl bg-blue-500/10 border border-blue-500/30 text-xs text-blue-300">
+    กำลังดาวน์โหลดโปรไฟล์... → เปิด <b>Settings → General → VPN &amp; Device Management</b> → ติดตั้งโปรไฟล์ <b>Laobet24</b>
+  </div>
+
+  <!-- Stats row -->
+  <div class="grid grid-cols-3 divide-x divide-neutral-800 my-4">
+    <div class="text-center">
+      <div class="text-[28px] font-bold leading-none">4.9</div>
+      <div class="my-1 flex justify-center gap-px">
+        <svg width="14" height="14" viewBox="0 0 20 20"><path d="M10 1l2.6 6 6.4.5-4.9 4.2 1.5 6.3L10 14.8 4.4 18l1.5-6.3L1 7.5 7.4 7z" fill="#FFB800"/></svg>
+        <svg width="14" height="14" viewBox="0 0 20 20"><path d="M10 1l2.6 6 6.4.5-4.9 4.2 1.5 6.3L10 14.8 4.4 18l1.5-6.3L1 7.5 7.4 7z" fill="#FFB800"/></svg>
+        <svg width="14" height="14" viewBox="0 0 20 20"><path d="M10 1l2.6 6 6.4.5-4.9 4.2 1.5 6.3L10 14.8 4.4 18l1.5-6.3L1 7.5 7.4 7z" fill="#FFB800"/></svg>
+        <svg width="14" height="14" viewBox="0 0 20 20"><path d="M10 1l2.6 6 6.4.5-4.9 4.2 1.5 6.3L10 14.8 4.4 18l1.5-6.3L1 7.5 7.4 7z" fill="#FFB800"/></svg>
+        <svg width="14" height="14" viewBox="0 0 20 20"><path d="M10 1l2.6 6 6.4.5-4.9 4.2 1.5 6.3L10 14.8 4.4 18l1.5-6.3L1 7.5 7.4 7z" fill="#FFB800"/></svg>
+      </div>
+      <div class="text-[11px] text-neutral-500">10,088 คะแนน</div>
+    </div>
+    <div class="text-center">
+      <div class="text-[28px] font-bold leading-none">#1</div>
+      <div class="text-[11px] text-neutral-500 mt-2.5">ลีดเดอร์บอร์ด</div>
+    </div>
+    <div class="text-center">
+      <div class="text-[28px] font-bold leading-none">18+</div>
+      <div class="text-[11px] text-neutral-500 mt-2.5">อายุ</div>
+    </div>
+  </div>
+
+  <!-- Screenshots -->
+  <h2 class="text-[19px] font-bold mt-6 mb-3">ภาพหน้าจอ</h2>
+  <div class="-mx-4 px-4 flex gap-3 overflow-x-auto scroll-snap no-scrollbar pb-2">
+    <div class="shrink-0 w-[260px] h-[480px] rounded-[20px] overflow-hidden card-bg relative shadow-xl"
+         style="background-image: url(./dooballsod.png);">
+      <div class="absolute inset-0 p-5 flex flex-col">
+        <div class="font-bold text-[22px] leading-tight text-white drop-shadow-md">ดูบอลสด</div>
+        <div class="text-[14px] text-white/90 mt-1.5 drop-shadow-md">ถ่ายทอดสดฟุตบอลจากทั่วโลก + Live Chat</div>
+      </div>
+    </div>
+    <div class="shrink-0 w-[260px] h-[480px] rounded-[20px] overflow-hidden card-bg relative shadow-xl"
+         style="background-image: url(./gamescreen.png);">
+      <div class="absolute inset-0 p-5 flex flex-col">
+        <div class="font-bold text-[22px] leading-tight text-white drop-shadow-md">เกมส์ครบทุกค่าย</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detail -->
+  <h2 class="text-[19px] font-bold mt-6 mb-3">รายละเอียด</h2>
+  <p class="text-[14px] text-neutral-300 leading-relaxed">
+    แอป Laobet24 เปิดเล่นเกมส์ออนไลน์ ฝาก-ถอนอัตโนมัติ
+    24 ชั่วโมง + ดูบอลสด ถ่ายทอดสด พร้อมระบบแชทห้องเชียร์
+  </p>
+
+  <h2 class="text-[19px] font-bold mt-6 mb-3">ข้อมูล</h2>
+  <ul class="text-[14px] text-neutral-300 space-y-2">
+    <li class="flex justify-between"><span class="text-neutral-500">ผู้พัฒนา</span><span>Laobet24</span></li>
+    <li class="flex justify-between"><span class="text-neutral-500">ขนาด</span><span>27 KB</span></li>
+    <li class="flex justify-between"><span class="text-neutral-500">หมวดหมู่</span><span>เกมส์ · กีฬา · บันเทิง</span></li>
+    <li class="flex justify-between"><span class="text-neutral-500">ความเข้ากันได้</span><span>iOS 12.0+</span></li>
+    <li class="flex justify-between"><span class="text-neutral-500">ภาษา</span><span>ไทย, ลาว, English</span></li>
+  </ul>
+
+  <div class="fixed bottom-0 inset-x-0 bg-black/95 backdrop-blur-md border-t border-neutral-800 py-3 text-center text-[13px] text-neutral-400">
+    บริการลูกค้า Laobet24 · 24 ชั่วโมง
+  </div>
+
+  <script>
+    document.getElementById('installBtn').addEventListener('click', function() {
+      document.getElementById('statusHint').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
